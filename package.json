@@ -1,0 +1,15 @@
+{
+  "name": "sitevaulttec",
+  "version": "1.0.0",
+  "description": "site web de l'entreprise",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch sass/style.scss:css/style.css"
+  },
+  "author": "Angelique",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.2",
+    "bootstrap": "^5.0.0-beta1"
+  }
+}

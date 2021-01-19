@@ -1,0 +1,30 @@
+.footer {
+    color: white;
+    font-family: "Oswald"!important;
+    padding: 40px;
+    font-size: 20px;
+    font-weight: 400;
+
+    &--background {
+        background-color: #0e193e;
+    }
+
+    &__container-box {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-around;
+    }
+
+    &__title{
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    &__box {
+    }
+}
+
+.rs--light{
+    font-size: 30px;
+    color: white;
+}
