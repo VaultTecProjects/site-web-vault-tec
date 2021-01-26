@@ -6,20 +6,109 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta description="">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <link rel="icon" href="/images/LogoVaultTecTest.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="icon" href="/assets/images/favIcon/LogoVaultTecTest.ico" />
     <title> VAULT TEC </title>
 </head>
 
 <body>
-    <head></head>
+    <header>
+        <nav class="navbar navbar-expand-lg light">
+            <div class="navbar__left-container">
+                <div class="navbar__left-info">
+                    <img id="logo-vault-tec" src="/assets/images/site/LogoVaultTecDarkColor.png" alt="logoDuSite">
+                    <p id="slogan"> L'expertise en gestion des accès et des identités. </p>
+                </div>
+            </div>
+            <div class="navbar__right-container">
+                <div class="navbar__navbar-nav">
+                    <a class="navbar__nav-link " href="Acceuil.html"> HOME </a>
+                    <a class="navbar__nav-link " href="Apropos.html"> A PROPOS </a>
+                    <a class="navbar__nav-link " href="Services.html"> SERVICES </a>
+                    <a class="navbar__nav-link" href="Team.html"> LA TEAM </a>
+                    <a class="navbar__nav-link " href="Contact.html"> CONTACT </a>
+                </div>
+            </div>
+        </nav>
+    </header>
     <main>
+        <div class="container">
+            <div class="contact-info">
+                <div class="contact-info__left-side">
+                    <div class="info-box">
+                        <div class="icon">
+
+                        </div>
+                        <h4>Adresse</h4>
+                        <p> 134 rue des Templiers, 59000 LILLE <br> FRANCE</p>
+                    </div>
+                    <div class="info-box">
+                        <div class="icon">
+
+                        </div>
+                        <h4>Téléphone</h4>
+                        <p> 06.06.06.06.06</p>
+                    </div>
+                    <div class="info-box">
+                        <div class="info-box__icon">
+                            <!-- <i class="fas fa-phone-alt"></i> -->
+                        </div>
+                        <h4>Adresse mail</h4>
+                        <p> contact@vaulttec.fr</p>
+                    </div>
+                </div>
+                <div class="contact-info__right-side">
+                    <form>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="">
+                                    <input type="text" id="inputPassword6" class="testForm form-control" aria-describedby=""
+                                        placeholder="Nom">
+                                </div>
+                            </div>
+                            <div class="mb-4 ms-5 col-lg-6">
+                                <div class="">
+                                    <input type="email" id="" class="testForm form-control" aria-describedby=""
+                                        placeholder="Email">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-4 col-auto">
+                            <input type="email" class="testForm form-control" id="" aria-describedby="" placeholder="Sujet">
+                        </div>
+                        <div class="mb-4 col-auto">
+                            <textarea class="testForm form-control" id="exampleFormControlTextarea1" rows="7" placeholder="Votre Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary"> Envoyer </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
     </main>
-    <footer></footer>
+    <footer>
+        <div class="footer footer--background">
+            <div class="footer__container-box">
+                <div class="footer__box">
+                    <p class="footer__title footer__title-style">Vault Tec</p>
+
+                    <div class="footer__box">
+                        <a><i class="fab fa-linkedin rs--light"></i></a>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <div id="copyright">
+        <p> Copyright © 2021 VaultTec - Mentions Légales</p>
+    </div>
 </body>
 <html>

@@ -1,0 +1,43 @@
+.container {
+    padding: 60px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    margin-top: 150px;
+
+    &__left-side {
+        background-color: white;
+        width: 50%;
+    }
+
+    &__right-side {
+        width: 100%;
+        background-color: #0e193e;
+        form {
+            padding: 70px;
+            .testForm {
+                color: whitesmoke;
+                background: #092748;
+                padding: 20px;
+                border: none;
+            }
+        }
+    }
+}
+
+.info-box {
+    border-bottom: 1px solid grey;
+    width: 60%;
+    margin: 50px;
+
+    &__icon {
+        position: absolute;
+    }
+
+    h4 {
+        text-transform: uppercase;
+    }
+}

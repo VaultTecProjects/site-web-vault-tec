@@ -113,6 +113,46 @@ nav {
   color: white;
 }
 
+.container {
+  padding: 60px;
+}
+
+.contact-info {
+  display: flex;
+  justify-content: baseline;
+  align-items: center;
+  margin-top: 150px;
+}
+.contact-info__left-side {
+  background-color: white;
+  width: 50%;
+}
+.contact-info__right-side {
+  width: 100%;
+  background-color: #0e193e;
+}
+.contact-info__right-side form {
+  padding: 70px;
+}
+.contact-info__right-side form .testForm {
+  color: whitesmoke;
+  background: #092748;
+  padding: 20px;
+  border: none;
+}
+
+.info-box {
+  border-bottom: 1px solid grey;
+  width: 60%;
+  margin: 50px;
+}
+.info-box__icon {
+  position: absolute;
+}
+.info-box h4 {
+  text-transform: uppercase;
+}
+
 .img {
   margin-top: 129px;
   width: 100%;
