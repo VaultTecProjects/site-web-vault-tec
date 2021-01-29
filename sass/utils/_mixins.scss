@@ -1,0 +1,10 @@
+@mixin title-section ($color){
+    font-size: 30px;
+    text-align: center;
+    font-family: "Oswald";
+    color: $color;
+    border-bottom: #b3b3b3 1px solid;
+    width: 30%;
+    padding-bottom: 15px;
+    margin: 30px auto;
+}

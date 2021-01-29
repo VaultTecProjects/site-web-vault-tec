@@ -34,6 +34,7 @@ nav {
 .navbar {
   background-color: #e6e6e6;
   height: 130px;
+  z-index: 1;
 }
 .navbar__left-container {
   position: absolute;
@@ -121,7 +122,7 @@ nav {
   display: flex;
   justify-content: baseline;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 50px;
 }
 .contact-info__left-side {
   background-color: white;
@@ -182,13 +183,18 @@ h4 {
 }
 
 .head {
-  width: 30%;
-  margin-top: 150px;
+  margin-top: 120px;
+  margin-bottom: 30px;
+}
+.head__title {
+  font-size: 30px;
   text-align: center;
-  border-bottom: #e4a13e 1px solid;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  font-family: "Oswald";
+  color: #0e193e;
+  border-bottom: #b3b3b3 1px solid;
+  width: 30%;
+  padding-bottom: 15px;
+  margin: 30px auto;
 }
 
 .img {
@@ -209,11 +215,12 @@ h4 {
 .section__title {
   font-size: 30px;
   text-align: center;
-  font-family: "Nunito Sans";
+  font-family: "Oswald";
   color: white;
   border-bottom: #b3b3b3 1px solid;
   width: 30%;
-  margin: 20px auto;
+  padding-bottom: 15px;
+  margin: 30px auto;
 }
 .section__title--dark {
   color: #0e193e;
@@ -245,6 +252,26 @@ h4 {
 .section__logoPartner {
   width: 20%;
   height: 20%;
+}
+
+.team-box {
+  background-color: antiquewhite;
+  width: 30%;
+}
+
+.cadre-photo {
+  width: 20%;
+  height: 20%;
+  border-radius: 20px;
+  background-color: black;
+}
+
+.cadre-photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: green;
+  border: 1px solid #e4a13e;
 }
 
 /*# sourceMappingURL=style.css.map */

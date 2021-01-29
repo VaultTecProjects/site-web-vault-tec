@@ -11,20 +11,14 @@
         background-color: #0e193e;
     }
 
-    &--background-white{
+    &--background-white {
         background-color: white;
     }
 
     &__title {
-        font-size: 30px;
-        text-align: center;
-        font-family: "Nunito Sans";
-        color: white;
-        border-bottom: #b3b3b3 1px solid;
-        width: 30%;
-        margin: 20px auto;
+        @include title-section(white);
         &--dark{
-            color:#0e193e
+            color: #0e193e;
         }
     }
 
@@ -50,13 +44,13 @@
         display: block;
     }
 
-    &__partner{
+    &__partner {
         display: flex;
         justify-content: space-around;
         align-items: center;
     }
 
-    &__logoPartner{
+    &__logoPartner {
         width: 20%;
         height: 20%;
     }

@@ -6,7 +6,7 @@
     display: flex;
     justify-content: baseline;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 50px;
 
     &__left-side {
         background-color: white;
@@ -42,7 +42,7 @@ h4 {
     text-transform: uppercase;
 }
 
-.icon-right{
+.icon-right {
     position: absolute;
     color: #e4a13e;
     margin: 25px 15px;
@@ -56,7 +56,7 @@ h4 {
     color: #092748;
 }
 
-.form-btn{
+.form-btn {
     padding: 10px 50px;
     border: none;
     background-color: #e4a13e;
@@ -68,12 +68,12 @@ h4 {
     font-size: 20px;
 }
 
-.head{
-    width: 30%;
-    margin-top: 150px;
-    text-align: center;
-    border-bottom: #e4a13e 1px solid;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.head {
+    margin-top: 120px;
+    margin-bottom: 30px;
+
+        &__title{
+            @include title-section (#0e193e)
+        }
 }
+
