@@ -1,18 +1,65 @@
-.team-box{
-    background-color: antiquewhite;
-    width: 30%;
+.head {
+    margin-top: 120px;
+    margin-bottom: 30px;
+
+    &__title {
+        @include title-section(#0e193e);
+    }
 }
-.cadre-photo {
-    width: 20%;
-    height: 20%;
-    border-radius: 20px;
-    background-color: black;
+
+.team-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.box-collab {
+    height: 500px;
 }
 
 .cadre-photo {
-    width: 200px;
-    height: 200px;
+    position: relative;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
-    background: green;
-    border: 1px solid #e4a13e;
+    background: #0e193e;
+    z-index: 1;
+
+}
+.photo-team{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.photo-text {
+    position: relative;
+    bottom: 130px;
+    width: 250px;
+    background-color: #e6e6e6;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    text-align: center;
+    padding: 150px 20px 20px 20px;
+}
+p {
+    margin: 0;
+}
+
+.name{
+    margin: 10px 0px;
+    text-transform: uppercase;
+    font-family: 'Oswald';
+    font-size: 20px;
+    font-weight: bold;
+    color: #0e193e;
+}
+
+.job {
+    margin: 10px 0px;
+    font-style: italic;
+}
+.presentation-txt{
+    margin: 0;
 }

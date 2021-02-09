@@ -34,7 +34,7 @@ nav {
 .navbar {
   background-color: #e6e6e6;
   height: 130px;
-  z-index: 1;
+  z-index: 1000000;
 }
 .navbar__left-container {
   position: absolute;
@@ -254,24 +254,78 @@ h4 {
   height: 20%;
 }
 
-.team-box {
-  background-color: antiquewhite;
+.head {
+  margin-top: 120px;
+  margin-bottom: 30px;
+}
+.head__title {
+  font-size: 30px;
+  text-align: center;
+  font-family: "Oswald";
+  color: #0e193e;
+  border-bottom: #b3b3b3 1px solid;
   width: 30%;
+  padding-bottom: 15px;
+  margin: 30px auto;
+}
+
+.team-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.box-collab {
+  height: 500px;
 }
 
 .cadre-photo {
-  width: 20%;
-  height: 20%;
-  border-radius: 20px;
-  background-color: black;
-}
-
-.cadre-photo {
-  width: 200px;
-  height: 200px;
+  position: relative;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
-  background: green;
-  border: 1px solid #e4a13e;
+  background: #0e193e;
+  z-index: 1;
+}
+
+.photo-team {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.photo-text {
+  position: relative;
+  bottom: 130px;
+  width: 250px;
+  background-color: #e6e6e6;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  text-align: center;
+  padding: 150px 20px 20px 20px;
+}
+
+p {
+  margin: 0;
+}
+
+.name {
+  margin: 10px 0px;
+  text-transform: uppercase;
+  font-family: "Oswald";
+  font-size: 20px;
+  font-weight: bold;
+  color: #0e193e;
+}
+
+.job {
+  margin: 10px 0px;
+  font-style: italic;
+}
+
+.presentation-txt {
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
