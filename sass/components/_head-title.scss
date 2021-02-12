@@ -1,0 +1,8 @@
+.head {
+    margin-top: 120px;
+    margin-bottom: 30px;
+
+        &__title{
+            @include title-section (#0e193e)
+        }
+}

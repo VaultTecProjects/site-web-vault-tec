@@ -1,0 +1,26 @@
+.encart{
+
+    &__service-box {
+        background-color: #e4a13e;
+        width: 250px;
+        height: 250px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 30px;
+    }
+
+    &__icon-service-box{
+        font-size: 70px;
+        color: #0e193e;
+    }
+
+    &__title-box {
+        font-family: "Oswald";
+        text-transform: uppercase;
+        font-weight: 400;
+
+    }
+}

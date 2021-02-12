@@ -2,7 +2,7 @@
     color: white;
     font-family: "Oswald"!important;
     padding: 40px;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 400;
 
     &--background {
@@ -21,6 +21,10 @@
     }
 
     &__box {
+    }
+
+    ul{
+        font-size: 18px;
     }
 }
 

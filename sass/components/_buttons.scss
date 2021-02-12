@@ -1,3 +1,28 @@
 .btn-light {
     margin: 0 30px;
 }
+
+//btn de la section "ils nous font confiance"
+.btn-temoignage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 65px;
+    background-color: #e4a13e;
+    font-family: "Oswald";
+    font-size: 18px;
+    padding: 20px;
+    margin: 70px auto;
+    a {
+        text-decoration: none;
+        color: #0e193e;
+    }
+    a:hover{
+        color: #e6e6e6;
+    }
+} 
+
+
+//btn jaune
+

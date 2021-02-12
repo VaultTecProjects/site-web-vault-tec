@@ -14,6 +14,62 @@ body {
   margin: 0 30px;
 }
 
+.btn-temoignage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  height: 65px;
+  background-color: #e4a13e;
+  font-family: "Oswald";
+  font-size: 18px;
+  padding: 20px;
+  margin: 70px auto;
+}
+.btn-temoignage a {
+  text-decoration: none;
+  color: #0e193e;
+}
+.btn-temoignage a:hover {
+  color: #e6e6e6;
+}
+
+.encart__service-box {
+  background-color: #e4a13e;
+  width: 250px;
+  height: 250px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+}
+.encart__icon-service-box {
+  font-size: 70px;
+  color: #0e193e;
+}
+.encart__title-box {
+  font-family: "Oswald";
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.head {
+  margin-top: 120px;
+  margin-bottom: 30px;
+}
+.head__title {
+  font-size: 30px;
+  text-align: center;
+  font-family: "Oswald";
+  color: #0e193e;
+  border-bottom: #b3b3b3 1px solid;
+  width: 30%;
+  padding-bottom: 15px;
+  margin: 30px auto;
+}
+
 #copyright {
   font-family: "Nunito Sans";
   background-color: #212529;
@@ -94,7 +150,7 @@ nav {
   color: white;
   font-family: "Oswald" !important;
   padding: 40px;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 400;
 }
 .footer--background {
@@ -109,6 +165,10 @@ nav {
   font-size: 30px;
   font-weight: 400;
 }
+.footer ul {
+  font-size: 18px;
+}
+
 .rs--light {
   font-size: 30px;
   color: white;
@@ -182,21 +242,6 @@ h4 {
   font-size: 20px;
 }
 
-.head {
-  margin-top: 120px;
-  margin-bottom: 30px;
-}
-.head__title {
-  font-size: 30px;
-  text-align: center;
-  font-family: "Oswald";
-  color: #0e193e;
-  border-bottom: #b3b3b3 1px solid;
-  width: 30%;
-  padding-bottom: 15px;
-  margin: 30px auto;
-}
-
 .img {
   margin-top: 129px;
   width: 100%;
@@ -228,30 +273,44 @@ h4 {
 .section__container-box {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin: 40px;
-}
-.section__service-box {
-  text-align: center;
-  background-color: #b3b3b3;
-  width: 25%;
-  height: 100%;
-  border-radius: 20px;
-  color: white;
-  padding: 20px;
-}
-.section__title-box {
-  border-bottom: #cdcfd1 1px solid;
-  display: block;
 }
 .section__partner {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 80%;
+  margin: auto;
 }
 .section__logoPartner {
   width: 20%;
   height: 20%;
+}
+
+.box-services {
+  background-color: #e6e6e6;
+  display: flex;
+  margin: 50px auto;
+  width: 70%;
+}
+
+.encart__service-box {
+  width: 200px;
+  height: 200px;
+}
+
+.encart__icon-service-box {
+  font-size: 20px;
+}
+
+.encart__title-box {
+  font-size: 15px;
+}
+
+.services-description {
+  padding: 30px;
+  text-align: justify;
 }
 
 .head {
@@ -299,6 +358,7 @@ h4 {
   position: relative;
   bottom: 130px;
   width: 250px;
+  height: 450px;
   background-color: #e6e6e6;
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;

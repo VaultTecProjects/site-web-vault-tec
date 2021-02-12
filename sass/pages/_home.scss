@@ -25,29 +25,16 @@
     &__container-box {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-evenly;
         margin: 40px;
-    }
-
-    &__service-box {
-        text-align: center;
-        background-color: #b3b3b3;
-        width: 25%;
-        height: 100%;
-        border-radius: 20px;
-        color: white;
-        padding: 20px;
-    }
-
-    &__title-box {
-        border-bottom: #cdcfd1 1px solid;
-        display: block;
     }
 
     &__partner {
         display: flex;
         justify-content: space-around;
         align-items: center;
+        width: 80%;
+        margin: auto;
     }
 
     &__logoPartner {
@@ -55,3 +42,4 @@
         height: 20%;
     }
 }
+
