@@ -20,6 +20,7 @@ body {
   justify-content: center;
   width: 350px;
   height: 65px;
+  border-radius: 10px;
   background-color: #e4a13e;
   font-family: "Oswald";
   font-size: 18px;
@@ -34,6 +35,24 @@ body {
   color: #e6e6e6;
 }
 
+.form-btn {
+  padding: 10px 50px;
+  border: none;
+  background-color: #e4a13e;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Oswald";
+  text-transform: uppercase;
+  font-size: 20px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 5px 5px 10px black;
+}
+.form-btn:focus {
+  outline: 0;
+}
+
 .encart__service-box {
   background-color: #e4a13e;
   width: 250px;
@@ -44,6 +63,7 @@ body {
   justify-content: space-around;
   align-items: center;
   padding: 30px;
+  border-radius: 20px;
 }
 .encart__icon-service-box {
   font-size: 70px;
@@ -158,20 +178,44 @@ nav {
 }
 .footer__container-box {
   display: flex;
-  align-items: baseline;
+  align-items: flex-start;
   justify-content: space-around;
 }
 .footer__title {
   font-size: 30px;
   font-weight: 400;
 }
+.footer__title--adress {
+  font-size: 30px;
+}
+.footer__title--socialmedia {
+  font-size: 20px;
+}
 .footer ul {
   font-size: 18px;
+  padding: 0;
 }
 
 .rs--light {
   font-size: 30px;
-  color: white;
+  color: #0e193e;
+  position: absolute;
+  top: 10px;
+  left: 12px;
+}
+
+.footer__btn {
+  padding: 8px 20px;
+  font-size: 17px;
+}
+
+.background-rs {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  background-color: white;
+  box-shadow: 10px 5px 5px black;
 }
 
 .container {
@@ -191,6 +235,7 @@ nav {
 .contact-info__right-side {
   width: 100%;
   background-color: #0e193e;
+  border-radius: 20px;
 }
 .contact-info__right-side form {
   padding: 70px;
@@ -200,6 +245,7 @@ nav {
   background: #092748;
   padding: 20px 50px;
   border: none;
+  border-radius: 10px;
 }
 
 .info-box {
@@ -228,18 +274,6 @@ h4 {
   font-size: 20px;
   left: 20px;
   color: #092748;
-}
-
-.form-btn {
-  padding: 10px 50px;
-  border: none;
-  background-color: #e4a13e;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  font-family: "Oswald";
-  text-transform: uppercase;
-  font-size: 20px;
 }
 
 .img {
@@ -299,9 +333,9 @@ h4 {
   width: 200px;
   height: 200px;
 }
-
-.encart__icon-service-box {
-  font-size: 20px;
+.encart__service-box .flip-2-ver-right-2 {
+  -webkit-animation: flip-2-ver-right-2 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  animation: flip-2-ver-right-2 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
 }
 
 .encart__title-box {

@@ -8,10 +8,10 @@
 .encart__service-box {
     width: 200px;
     height: 200px;
-
-}
-.encart__icon-service-box{
-    font-size: 20px;
+.flip-2-ver-right-2 {
+        -webkit-animation: flip-2-ver-right-2 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+                animation: flip-2-ver-right-2 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    }
 }
 
 .encart__title-box{
