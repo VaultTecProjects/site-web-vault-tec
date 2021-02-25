@@ -7,7 +7,7 @@
 .section {
     padding: 1rem 0;
 
-    &--background-grey {
+    &--background-blue {
         background-color: #0e193e;
     }
 
@@ -17,7 +17,7 @@
 
     &__title {
         @include title-section(white);
-        &--dark{
+        &--dark {
             color: #0e193e;
         }
     }
@@ -31,15 +31,29 @@
 
     &__partner {
         display: flex;
-        justify-content: space-around;
-        align-items: center;
         width: 80%;
         margin: auto;
+        height: 400px;
     }
 
     &__logoPartner {
-        width: 20%;
-        height: 20%;
+        object-fit: contain;
+        width: 50%;
     }
 }
 
+.testTemoignage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.testParolePartenaire {
+    width: 45%;
+    margin-top: 20px;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 18px;
+    text-align: justify;
+}

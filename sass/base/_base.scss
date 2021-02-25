@@ -1,7 +1,13 @@
 body{
     margin: 0;
+    min-width: 1280px;
+    margin: auto;
 }
 
+a {
+    text-decoration: none!important;
+    color: white!important;
+}
 
 li {
     list-style-type: none;

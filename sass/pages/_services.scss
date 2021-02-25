@@ -1,24 +1,54 @@
-.box-services {
-    background-color: #e6e6e6;
+.services-section {
     display: flex;
-    margin: 50px auto;
-    width: 70%;
+    justify-content: space-between;
 }
+.box-services {
+    background: $grey;
+    padding: 30px;
+    text-align: center;
+    border-radius: 20px;
+    width: 30%;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 
-.encart__service-box {
-    width: 200px;
-    height: 200px;
-.flip-2-ver-right-2 {
-        -webkit-animation: flip-2-ver-right-2 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-                animation: flip-2-ver-right-2 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    &__title {
+        font-family: "Oswald";
+        text-transform: uppercase;
+        font-size: 20px;
+        margin-top: 15px;
+        color: white;
+    }
+
+    &__icon {
+        color: $yellow;
+        font-size: 70px;
+    }
+
+    &__description {
+        width: 80%;
+        margin: 10px auto;
+        text-align: justify;
+        color: white;
+        padding: 30px;
     }
 }
 
-.encart__title-box{
-    font-size: 15px;
+.Prout{
+    height: 500px;
+    padding: 30px;
+    margin: 30px;
+    width: 80%;
+    background-color: $blue;
+    margin: auto;
+    border-radius: 20px;
 }
 
-.services-description {
-    padding: 30px;
-    text-align: justify;
+.diagonal-box {
+    border-bottom: 1px solid $yellow;
+    transform: skewY(5deg);
+}
+
+.content {
+    max-width: 50em;
+    margin: 0 auto;
+    transform: skewY(-5deg);
 }

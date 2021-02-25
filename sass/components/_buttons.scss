@@ -10,14 +10,14 @@
     width: 350px;
     height: 65px;
     border-radius: 10px;
-    background-color: #e4a13e;
+    background-color: $yellow;
     font-family: "Oswald";
     font-size: 18px;
     padding: 20px;
     margin: 70px auto;
     a {
         text-decoration: none;
-        color: #0e193e;
+        color: $blue;
     }
     a:hover{
         color: #e6e6e6;
@@ -30,7 +30,7 @@
 .form-btn {
     padding: 10px 50px;
     border: none;
-    background-color: #e4a13e;
+    background-color: $yellow;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -38,8 +38,9 @@
     text-transform: uppercase;
     font-size: 20px;
     border-radius: 10px;
-    color: white;
-    box-shadow: 5px 5px 10px black;
+    color: black;
+    font-weight: 500;
+    box-shadow: 3px 5px 10px black;
     &:focus{
         outline: 0;
     }
