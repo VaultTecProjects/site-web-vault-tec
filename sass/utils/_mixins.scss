@@ -1,7 +1,8 @@
 @mixin title-section ($color){
     font-size: 30px;
     text-align: center;
-    font-family: "Oswald";
+    font-family: "Nunito Sans";
+    font-weight: bold;
     color: $color;
     border-bottom: #b3b3b3 1px solid;
     width: 30%;

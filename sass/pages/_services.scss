@@ -1,54 +1,77 @@
-.services-section {
+
+.hero--diagonal {
+    position: relative;
+    background-color: transparent;
+    min-height: 500px;
     display: flex;
-    justify-content: space-between;
-}
-.box-services {
-    background: $grey;
-    padding: 30px;
-    text-align: center;
-    border-radius: 20px;
-    width: 30%;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    align-items: center;
+    justify-content: center;
 
-    &__title {
-        font-family: "Oswald";
-        text-transform: uppercase;
-        font-size: 20px;
-        margin-top: 15px;
-        color: white;
+    &::before {
+        content: "";
+        position: absolute;
+        top: -50px;
+        left: 0;
+        width: 100%;
+        height: calc(100% + 100px);
+        clip-path: polygon(0% 0%, 100% 15%, 100% 100%, 0% 100%);
+        background-color: $grey;
     }
 
-    &__icon {
-        color: $yellow;
-        font-size: 70px;
+    .hero__content {
+        z-index: 1;
+        position: absolute;
+        left: -400px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    &__description {
-        width: 80%;
-        margin: 10px auto;
+    .hero__description{
+        width: 30%;
         text-align: justify;
-        color: white;
-        padding: 30px;
     }
 }
 
-.Prout{
-    height: 500px;
-    padding: 30px;
-    margin: 30px;
-    width: 80%;
-    background-color: $blue;
-    margin: auto;
-    border-radius: 20px;
+
+
+.hero--diagonal-inverse {
+    position: relative;
+    background-color: transparent;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: -50px;
+        left: 0;
+        width: 100%;
+        height: calc(100% + 100px);
+        clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 100%);
+        background-color: $blue;
+    }
+
+    .hero__content {
+        z-index: 1;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        color: $grey;
+    }
+
+    
+    .hero__description{
+        width: 30%;
+        text-align: justify;
+    }
 }
 
-.diagonal-box {
-    border-bottom: 1px solid $yellow;
-    transform: skewY(5deg);
+.yellow{
+    color: $yellow;
 }
 
-.content {
-    max-width: 50em;
-    margin: 0 auto;
-    transform: skewY(-5deg);
-}

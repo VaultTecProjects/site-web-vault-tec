@@ -25,13 +25,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 350px;
-  height: 65px;
-  border-radius: 10px;
+  border-radius: 30px;
   background-color: #e4a13e;
-  font-family: "Oswald";
+  font-family: "Nunito Sans";
   font-size: 18px;
-  padding: 20px;
+  padding: 5px 15px;
   margin: 70px auto;
 }
 .btn-temoignage a {
@@ -72,6 +70,7 @@ body {
   justify-content: space-evenly;
   padding: 25px;
   border-radius: 20px;
+  box-shadow: 1px 16px 10px #c5c5c5;
 }
 .encart__icon-service-box {
   font-size: 70px;
@@ -106,7 +105,8 @@ body {
 .head__title {
   font-size: 30px;
   text-align: center;
-  font-family: "Oswald";
+  font-family: "Nunito Sans";
+  font-weight: bold;
   color: #0e193e;
   border-bottom: #b3b3b3 1px solid;
   width: 30%;
@@ -132,48 +132,22 @@ nav {
 }
 
 .navbar {
-  background-color: #e6e6e6;
-  height: 130px;
+  position: relative;
+  margin-top: 50px;
   z-index: 1000000;
 }
-.navbar__left-container {
-  position: absolute;
-  left: 0;
-  width: 40%;
-  height: 100%;
-  background-color: #e6e6e6;
-}
-.navbar__left-info {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 10px;
-}
-.navbar__left-info #logo-vault-tec {
-  width: 100px;
-  height: 100px;
-}
-.navbar__left-info #slogan {
-  font-family: "Nunito Sans";
-  font-weight: 800;
-  font-size: 18px;
-  text-align: center;
-  margin-top: 40px;
-}
 .navbar__right-container {
-  position: absolute;
-  right: 0;
-  width: 60%;
+  width: 100%;
   height: 100%;
-  clip-path: polygon(9% 0, 100% 0%, 111% 100%, 0% 100%);
-  background-color: #0e193e;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 .navbar__navbar-nav {
   display: flex;
-  width: 85%;
-  margin-top: 54px;
-  margin-left: 120px;
-  justify-content: space-around;
+  width: 60%;
+  justify-content: space-evenly;
 }
 .navbar__nav-link {
   text-decoration: none;
@@ -182,6 +156,8 @@ nav {
   color: white;
   display: block;
   padding: 0.5rem 1rem;
+  font-size: 16px;
+  letter-spacing: 2px;
 }
 .navbar__nav-link:hover {
   text-decoration: none;
@@ -242,12 +218,44 @@ nav {
   box-shadow: 5px 5px 5px black;
 }
 
+.container-box {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+
 .box-about {
-  border-bottom: 1px solid #e6e6e6;
+  background-color: #e6e6e6;
+  padding: 40px;
+  border-radius: 20px;
+  width: 50%;
+  margin: 50px;
+}
+.box-about__right {
+  align-self: flex-end;
 }
 .box-about__title {
   font-family: "Oswald";
-  font-size: 20px;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 0px 0px 20px 0;
+  text-align: center;
+  color: #0e193e;
+  text-transform: uppercase;
+}
+.box-about__description {
+  text-align: justify;
+  color: #0e193e;
+}
+
+.line {
+  border-left: 2px solid #e4a13e;
+  height: 1740px;
+  position: absolute;
+  left: 50%;
 }
 
 .container {
@@ -315,7 +323,10 @@ h4 {
 }
 
 .section {
-  padding: 1rem 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
 }
 .section--background-blue {
   background-color: #0e193e;
@@ -326,7 +337,8 @@ h4 {
 .section__title {
   font-size: 30px;
   text-align: center;
-  font-family: "Oswald";
+  font-family: "Nunito Sans";
+  font-weight: bold;
   color: white;
   border-bottom: #b3b3b3 1px solid;
   width: 30%;
@@ -336,21 +348,33 @@ h4 {
 .section__title--dark {
   color: #0e193e;
 }
+.section__description {
+  text-align: center;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.section__btn {
+  display: flex;
+}
 .section__container-box {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin: 40px;
+  background-color: #fbfbfb;
 }
 .section__partner {
   display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   width: 80%;
   margin: auto;
-  height: 400px;
+  height: 300px;
 }
 .section__logoPartner {
   object-fit: contain;
-  width: 50%;
+  width: 20%;
 }
 
 .testTemoignage {
@@ -358,68 +382,169 @@ h4 {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  background-color: #0e193e;
+  color: white;
+  width: 20%;
+  border-radius: 30px;
+  box-shadow: 0px 12px 10px #c5c5c5;
 }
 
 .testParolePartenaire {
-  width: 45%;
   margin-top: 20px;
   font-style: italic;
   font-weight: 300;
   font-size: 18px;
-  text-align: justify;
-}
-
-.services-section {
-  display: flex;
-  justify-content: space-between;
-}
-
-.box-services {
-  background: #e6e6e6;
-  padding: 30px;
   text-align: center;
-  border-radius: 20px;
-  width: 30%;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+  height: 130px;
+  padding: 30px;
 }
-.box-services__title {
-  font-family: "Oswald";
+
+.icon-plus {
+  margin-left: 5px;
+  background-color: #e6e6e6;
+  padding: 5px 6px;
+  border-radius: 30px;
+  font-size: 15px;
+}
+
+.presentation {
+  position: absolute;
+  top: 450px;
+  left: 250px;
+  color: #e6e6e6;
+  font-size: 30px;
+  font-weight: 400;
+}
+.presentation__title {
   text-transform: uppercase;
-  font-size: 20px;
-  margin-top: 15px;
-  color: white;
-}
-.box-services__icon {
-  color: #e4a13e;
+  font-family: "Oswald";
   font-size: 70px;
 }
-.box-services__description {
-  width: 80%;
-  margin: 10px auto;
-  text-align: justify;
-  color: white;
-  padding: 30px;
+
+.logo {
+  position: absolute;
+  z-index: 1;
+  width: 100px;
+  left: 150px;
+  top: 20px;
 }
 
-.Prout {
-  height: 500px;
-  padding: 30px;
-  margin: 30px;
-  width: 80%;
+.background-img {
+  filter: brightness(0.5);
+  width: 100%;
+}
+
+.img-section-about-us {
+  width: 30%;
+  background-color: #e6e6e6;
+  border-radius: 50%;
+  padding: 60px;
+  box-shadow: 15px 6px 37px #c5c5c5;
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section__partner-temoignage {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 50px;
+}
+
+.qui {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #e6e6e6;
+  width: 100%;
+  border-bottom-left-radius: 27px;
+  border-bottom-right-radius: 27px;
+  padding: 20px;
+  text-align: center;
+  color: #0e193e;
+}
+
+.futur-photo {
+  width: 50px;
+  height: 50px;
   background-color: #0e193e;
-  margin: auto;
-  border-radius: 20px;
+  border-radius: 50%;
+  color: white;
 }
 
-.diagonal-box {
-  border-bottom: 1px solid #e4a13e;
-  transform: skewY(5deg);
+section {
+  margin: 200px;
 }
 
-.content {
-  max-width: 50em;
-  margin: 0 auto;
-  transform: skewY(-5deg);
+.hero--diagonal {
+  position: relative;
+  background-color: transparent;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero--diagonal::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  height: calc(100% + 100px);
+  clip-path: polygon(0% 0%, 100% 15%, 100% 100%, 0% 100%);
+  background-color: #e6e6e6;
+}
+.hero--diagonal .hero__content {
+  z-index: 1;
+  position: absolute;
+  left: -400px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero--diagonal .hero__description {
+  width: 30%;
+  text-align: justify;
+}
+
+.hero--diagonal-inverse {
+  position: relative;
+  background-color: transparent;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero--diagonal-inverse::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 100%;
+  height: calc(100% + 100px);
+  clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 100%);
+  background-color: #0e193e;
+}
+.hero--diagonal-inverse .hero__content {
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: #e6e6e6;
+}
+.hero--diagonal-inverse .hero__description {
+  width: 30%;
+  text-align: justify;
+}
+
+.yellow {
+  color: #e4a13e;
 }
 
 .head {
@@ -429,7 +554,8 @@ h4 {
 .head__title {
   font-size: 30px;
   text-align: center;
-  font-family: "Oswald";
+  font-family: "Nunito Sans";
+  font-weight: bold;
   color: #0e193e;
   border-bottom: #b3b3b3 1px solid;
   width: 30%;

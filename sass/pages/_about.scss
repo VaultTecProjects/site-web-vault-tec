@@ -1,8 +1,44 @@
+
+.container-box {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+}
+
 .box-about {
-    border-bottom: 1px solid $grey;
-    
+    background-color: $grey;
+    padding: 40px;
+    border-radius: 20px;
+    width: 50%;
+    margin: 50px;
+
+    &__right{
+        align-self: flex-end;
+    }
+
     &__title {
         font-family: "Oswald";
-        font-size: 20px;
+        font-size: 25px;
+        font-weight: 600;
+        padding: 0px 0px 20px 0;
+        text-align: center;
+        color: $blue;
+        text-transform: uppercase;
     }
+
+    &__description{
+        text-align: justify;
+        color: $blue;
+    }
+}
+
+.line{
+    border-left: 2px solid $yellow;
+    height: 1740px;
+    position: absolute;
+    left: 50%;
+    
 }
